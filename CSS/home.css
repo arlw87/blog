@@ -60,10 +60,76 @@
   align-items: center;
 }
 
+/*Main section*/
+
 .main-section {
   border: 1px green solid;
   grid-area: main;
+  background-color: #f0f0f0;
+  text-align: center;
 }
+
+.recent-blogs {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 40vh);
+  padding: 0 10px 10px 10px;
+  grid-gap: 30px;
+  margin: 0 18%;
+}
+
+/* Cards */
+
+.card {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-position: center;
+  background-size: cover;
+  -webkit-box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
+}
+
+.card-text {
+  background-color: #fff;
+  opacity: 80%;
+  text-align: left;
+  padding: 0 2vw;
+  height: 40%;
+  font-size: 1.5rem;
+}
+
+.card-title-container {
+  line-height: 0.1rem;
+  margin: 0 0 30px 0;
+}
+
+.card-author {
+  color: #ddd2d3;
+}
+
+.card-title {
+  font-size: 3rem;
+}
+
+#blogOne {
+  background-image: url(../Images/home/blog1.jpg);
+}
+
+.blog-button {
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #ddd2d3;
+  border: none;
+}
+
+#button-one {
+  background-color: red;
+}
+
+/* footer */
 
 .footer {
   border: 1px black solid;
