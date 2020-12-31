@@ -1,0 +1,30 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: minmax(50px, auto) minmax(100px, auto) auto 50px;
+  grid-template-areas:
+    "nv nv nv nv"
+    "hero hero hero hero"
+    "main main main main"
+    "ft ft ft ft";
+}
+
+.nav-bar {
+  border: 1px red solid;
+  grid-area: nv;
+}
+
+.hero-banner {
+  border: 1px blue solid;
+  grid-area: hero;
+}
+
+.main-section {
+  border: 1px green solid;
+  grid-area: main;
+}
+
+.footer {
+  border: 1px black solid;
+  grid-area: ft;
+}
