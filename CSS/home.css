@@ -7,11 +7,23 @@
     "hero hero hero hero"
     "main main main main"
     "ft ft ft ft";
+  margin: 0;
 }
+
+/* navbar */
 
 .nav-bar {
   border: 1px red solid;
   grid-area: nv;
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem;
+  background-color: #f0f0f0;
+}
+
+.nav-bar-links {
+  text-decoration: none;
+  color: #333;
 }
 
 .hero-banner {
