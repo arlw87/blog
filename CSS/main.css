@@ -2,3 +2,7 @@
 
 /* Import styling for the individual pages */
 @import "./home.css";
+
+* {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
