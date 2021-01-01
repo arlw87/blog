@@ -25,6 +25,16 @@
   color: #333;
 }
 
+.sub-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.title-logo {
+  display: none;
+}
+
 /* hero banner */
 
 .hero-banner {
@@ -184,6 +194,20 @@
 @media (min-width: 992px) {
   .nav-bar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .sub-nav {
+    width: 40%;
+  }
+
+  .title-logo {
+    display: flex;
+  }
+
+  .site-logo {
+    height: 1.5em;
+    margin: 0 15px 0 30px;
   }
 }
