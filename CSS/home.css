@@ -110,15 +110,26 @@
   grid-area: ct;
 }
 
+.card-title-container {
+  margin: 0 0 1vh 0;
+}
+
 .card-author-date {
   display: flex;
   justify-content: start;
+  align-items: flex-start;
   color: #333;
 }
 
 .card-details {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
+  margin: 0 10px 0 0;
+}
+
+.card-icon {
+  height: 2em;
+  width: auto;
   margin: 0 10px 0 0;
 }
 
@@ -136,7 +147,7 @@
 
 .blog-description {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .blog-button {
@@ -146,17 +157,6 @@
   font-size: 1.8rem;
   box-shadow: -5px 10px 19px -5px rgba(0, 0, 0, 0.75);
 }
-
-/* .blog-link {
-  text-decoration: none;
-  color: red;
-}
-
-#button-one {
-  border: 3px red solid;
-  background-color: transparent;
-  padding: 10px 0;
-} */
 
 .blog-link {
   text-decoration: none;
@@ -209,5 +209,29 @@
   .site-logo {
     height: 1.5em;
     margin: 0 15px 0 30px;
+  }
+
+  .recent-blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 0 10px 10px 10px;
+    grid-gap: 30px;
+    margin: 20px 8%;
+  }
+
+  .card-icon {
+    height: 1em;
+    width: auto;
+    margin: 0 10px 0 0;
+  }
+
+  .blog-description {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  .card-title-container {
+    margin: 0 0 2vh 0;
   }
 }
