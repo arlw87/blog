@@ -13,11 +13,11 @@
 /* navbar */
 
 .nav-bar {
-  border: 1px red solid;
   grid-area: nv;
   display: flex;
   justify-content: space-around;
   background-color: #f0f0f0;
+  padding: 10px 0;
 }
 
 .nav-bar-links {
@@ -28,7 +28,6 @@
 /* hero banner */
 
 .hero-banner {
-  border: 1px blue solid;
   grid-area: hero;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -54,7 +53,6 @@
 /*Main section*/
 
 .main-section {
-  border: 1px green solid;
   grid-area: main;
   background-color: #f0f0f0;
   text-align: center;
@@ -117,6 +115,14 @@
   background-image: url(../Images/home/blog1.jpg);
 }
 
+#blogTwo {
+  background-image: url(../Images/home/blog2.jpg);
+}
+
+#blogThree {
+  background-image: url(../Images/home/blog3.jpg);
+}
+
 .blog-description {
   margin: 0;
   font-size: 1.5rem;
@@ -143,12 +149,24 @@
 
 .blog-link {
   text-decoration: none;
-  color: #333;
+  color: white;
 }
 
 #button-one {
   border: 3px red solid;
   background-color: red;
+  padding: 10px 0;
+}
+
+#button-two {
+  border: 3px blueviolet solid;
+  background-color: blueviolet;
+  padding: 10px 0;
+}
+
+#button-three {
+  border: 3px blue solid;
+  background-color: blue;
   padding: 10px 0;
 }
 
