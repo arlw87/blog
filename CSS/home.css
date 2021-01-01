@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: minmax(50px, auto) minmax(30vh, auto) auto 50px;
+  grid-template-rows: minmax(50px, auto) minmax(20vh, auto) auto 50px;
   grid-template-areas:
     "nv nv nv nv"
     "hero hero hero hero"
@@ -233,5 +233,9 @@
 
   .card-title-container {
     margin: 0 0 2vh 0;
+  }
+
+  .grid-container {
+    grid-template-rows: minmax(50px, auto) minmax(40vh, auto) auto 50px;
   }
 }
