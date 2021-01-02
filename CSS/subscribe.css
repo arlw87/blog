@@ -1,0 +1,39 @@
+.subscribe-main-section {
+  text-align: center;
+}
+
+.subscribe-form-contaienr {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.subscribe-form {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+}
+
+.subscribe-name-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 5px;
+  color: #333;
+}
+
+.subscribe-email-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5px;
+}
+
+.subscribe-consent-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.subscribe-submit-container {
+  text-align: center;
+}

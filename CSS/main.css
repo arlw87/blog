@@ -2,6 +2,7 @@
 
 /* Import styling for the individual pages */
 @import "./home.css";
+@import "./subscribe.css";
 
 body {
   font-family: Helvetica, sans-serif;
