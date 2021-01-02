@@ -19,6 +19,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  height: minmax(30vh, auto);
 }
 
 .hero-banner-image-container {

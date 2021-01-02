@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="../CSS/main.css">
 </head>
-<body class="subscription-grid-container">
+<body class="subscription-flex-container">
     <nav class="nav-bar">
         <div class="title-logo">
             <img class="site-logo" src="../icons/planet.png" alt="Site Logo">
@@ -17,10 +17,14 @@
             <h1 class ="display-4"><a class="nav-bar-links" href="./subscribe.html">Subscribe</a></h1>
         </div>
     </nav>
+    <header class="subscribe-hero-banner">
+        <h1 class="display-1 subscribe-title">Subscribe</h1>
+    </header>
     <main class="subscribe-main-section">
-        <h1>Subscription</h1>
-        <h2>Enjoying AstroBlog, fill in your details below to receive regularily email updates :-)</h2>
-        <section class="subscribe-form-contaienr">
+        <aside class="subscribe-description">
+            <h2 class="display-4">Enjoying AstroBlog? Please subscribe to our mailing list</h2>
+        </aside>
+        <section class="subscribe-form-container">
             <form class="subscribe-form">
                 <div class="subscribe-name-container">
                     <label class="display-4" for="name">Name</label>
@@ -31,17 +35,16 @@
                     <input class="display-4" type="text"/>
                 </div>
                 <div class="subscribe-consent-container">
-                    <label class="display-4" for="consent">Consent</label>
-                    <input class="display-4" type="checkbox"/>
+                    <label class="display-4" for="consent">Please send me emails</label>
+                    <input class="subscribe-form-checkbox" type="checkbox"/>
                 </div>
-                <br>
                 <div class="subscribe-submit-container">
-                    <input class="display-4" type="submit"/>
+                    <input class="display-4 subscribe-submit-button" type="submit"/>
                 </div>
             </form>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer subscribe-footer">
         <div class="footer-content">
             Copy Right Andrew White 2021
         </div>
