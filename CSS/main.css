@@ -4,6 +4,7 @@
 @import "./home.css";
 @import "./subscribe.css";
 @import "./post.css";
+@import "./navbar.css";
 
 body {
   font-family: Helvetica, sans-serif;

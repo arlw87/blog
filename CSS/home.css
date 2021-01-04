@@ -1,6 +1,4 @@
 /* import */
-@import "./navbar.css";
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -76,6 +74,10 @@
   -webkit-box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
 }
 
 /* used to center the card text */

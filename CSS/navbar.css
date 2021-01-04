@@ -13,6 +13,10 @@
   color: #333;
 }
 
+.nav-text:hover {
+  transform: scale(1.1, 1.1);
+}
+
 .sub-nav {
   display: flex;
   justify-content: space-around;
