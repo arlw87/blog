@@ -16,10 +16,6 @@
   text-align: center;
 }
 
-.post-authors-info {
-  grid-area: info;
-}
-
 .post-social-media {
   grid-area: social;
 }
@@ -42,4 +38,39 @@
 
 .post-article-text {
   margin: 20px 0;
+}
+
+/*Author Info Section*/
+
+.post-authors-info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: auto repeat(4, 1fr);
+  grid-template-rows: 1fr auto auto;
+  grid-template-areas:
+    "avatar name name name name"
+    "avatar title title title title"
+    "avatar bio bio bio bio";
+  column-gap: 2vw;
+}
+
+.author-avatar {
+  grid-area: avatar;
+  width: 85px;
+  place-self: center;
+}
+
+.author-name {
+  grid-area: name;
+  align-self: end;
+}
+
+.author-title-institution {
+  grid-area: title;
+}
+
+.author-bio {
+  grid-area: bio;
+  margin: 3px;
+  color: lightslategray;
 }
