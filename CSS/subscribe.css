@@ -1,3 +1,6 @@
+/*CSS styling for the Subscribe page*/
+
+/*layout of the page, use flexbox to force the footer to the bottom of the page*/
 .subscription-flex-container {
   display: flex;
   flex-direction: column;
@@ -27,9 +30,9 @@
 
 .subscribe-main-section {
   text-align: center;
-  /* margin: auto 0; */
 }
 
+/*Form styling*/
 .subscribe-form-container {
   background-color: #f0f0f0;
   width: 100%;
@@ -70,7 +73,7 @@
 }
 
 .subscribe-submit-button {
-  color: white;
+  color: #fff;
   background-color: #333;
   border: none;
 }
@@ -110,15 +113,11 @@ input[type="text"]:focus {
   }
 
   .subscribe-name-container {
-    display: flex;
-    margin: 5px;
     flex-direction: row;
   }
 
   .subscribe-email-container {
-    display: flex;
     flex-direction: row;
-    margin: 5px;
   }
 
   input[type="text"] {
@@ -127,6 +126,7 @@ input[type="text"]:focus {
   }
 }
 
+/*large screen devices*/
 @media (min-width: 992px) {
   .subscribe-form-container {
     width: 800px;
@@ -136,15 +136,11 @@ input[type="text"]:focus {
   }
 
   .subscribe-name-container {
-    display: flex;
-    margin: 5px;
     flex-direction: row;
   }
 
   .subscribe-email-container {
-    display: flex;
     flex-direction: row;
-    margin: 5px;
   }
 
   input[type="text"] {

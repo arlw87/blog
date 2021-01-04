@@ -1,4 +1,7 @@
-/* import */
+/*CSS style for the home page of the blog*/
+
+/*main layout of the home page*/
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -10,8 +13,7 @@
     "ft ft ft ft";
 }
 
-/* hero banner */
-
+/* hero banner styling*/
 .hero-banner {
   grid-area: hero;
   display: grid;
@@ -29,14 +31,21 @@
 
 .hero-banner-text-container {
   grid-area: 1/1/3/3;
-  color: white;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-/*Main section*/
+.header-tagline {
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 0px;
+  margin: 0;
+}
+
+/*Main section styling*/
 
 .main-section {
   grid-area: main;
@@ -66,13 +75,8 @@
     ". . . . ."
     ". . . . ."
     "ct ct ct ct ct";
-
-  /* flex-direction: column;
-  justify-content: flex-end; */
   background-position: center;
   background-size: cover;
-  -webkit-box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
   box-shadow: -1px 4px 19px 5px rgba(0, 0, 0, 0.75);
   transition: all 0.2s ease-in-out;
 }
@@ -80,8 +84,6 @@
 .card:hover {
   transform: scale(1.1, 1.1);
 }
-
-/* used to center the card text */
 
 .card-text {
   background-color: #fff;
@@ -113,6 +115,8 @@
   width: auto;
   margin: 0 10px 0 0;
 }
+
+/*Different images for different blog posts*/
 
 #blogOne {
   background-image: url(../Images/home/blog1.jpg);
@@ -164,14 +168,13 @@
 /* footer */
 
 .footer {
-  border: 1px black solid;
   grid-area: ft;
   background-color: #333;
 }
 
 .footer-content {
-  color: white;
-  margin: 15px 0;
+  color: #fff;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -180,13 +183,14 @@
 /*Tablet / Medium size devices */
 @media (min-width: 768px) and (max-width: 991px) {
   .recent-blogs {
-    display: grid;
     grid-template-columns: repeat(2, 300px);
     grid-template-rows: 400px;
-    padding: 0 10px 10px 10px;
-    grid-gap: 30px;
     margin: 20px 0;
     justify-content: center;
+  }
+
+  .header-tagline {
+    font-size: 1.5em;
   }
 }
 
@@ -194,11 +198,8 @@
 
 @media (min-width: 992px) {
   .recent-blogs {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 400px;
-    padding: 0 10px 10px 10px;
-    grid-gap: 30px;
     margin: 20px auto;
     justify-content: center;
     max-width: 950px;
@@ -210,5 +211,9 @@
 
   .grid-container {
     grid-template-rows: minmax(50px, auto) minmax(40vh, auto) auto auto;
+  }
+
+  .header-tagline {
+    font-size: 1.5em;
   }
 }

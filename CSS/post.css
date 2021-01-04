@@ -1,3 +1,6 @@
+/*CSS styling for post pages*/
+
+/*main layout of the post pages in mobile small screen view*/
 .post-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -28,16 +31,18 @@
   width: 100%;
 }
 
+/*different images for the different posts*/
+
 #post1-image {
-  background-image: url("../Images/posts/post1/main.jpg");
+  background-image: url(../Images/posts/post1/main.jpg);
 }
 
 #post2-image {
-  background-image: url("../Images/posts/post2/main.jpg");
+  background-image: url(../Images/posts/post2/main.jpg);
 }
 
 #post3-image {
-  background-image: url("../Images/posts/post3/main.jpg");
+  background-image: url(../Images/posts/post3/main.jpg);
 }
 
 .post-article-image-caption {
@@ -105,16 +110,13 @@
 /*Screen Sizes*/
 /*Tablet*/
 @media (min-width: 768px) and (max-width: 991px) {
+  /*change layout for tablet display moving the position of social media links*/
   .post-grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
     grid-template-areas:
       "hd hd hd"
       "info info social"
       "art art art"
       ". . .";
-    row-gap: 20px;
     margin: 0 auto;
     max-width: 680px;
   }
@@ -126,22 +128,20 @@
 
 /*large screens*/
 @media (min-width: 992px) {
+  /*change the layout for large screen devices*/
+  /*unsure that the article is centered down the middle of the page*/
   .post-grid-container {
-    display: grid;
     grid-template-columns: 1fr 680px 1fr;
-    grid-template-rows: repeat(4, auto);
     grid-template-areas:
       "hd hd hd"
       ". info  ."
       ". social ."
       ". art .";
-    row-gap: 20px;
     margin: 0 auto;
   }
 
+  /*move the avatar to the top of the author information in large screen view*/
   .post-authors-info {
-    grid-area: info;
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
@@ -149,7 +149,6 @@
       "name name name name"
       "title title title title"
       "bio bio bio bio";
-    column-gap: 2vw;
     text-align: center;
   }
 }
