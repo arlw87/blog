@@ -22,11 +22,22 @@
 }
 
 .post-article-image {
-  background-image: url("../Images/posts/post1/main.jpg");
   background-size: cover;
   background-position: center;
   height: 30vh;
   width: 100%;
+}
+
+#post1-image {
+  background-image: url("../Images/posts/post1/main.jpg");
+}
+
+#post2-image {
+  background-image: url("../Images/posts/post2/main.jpg");
+}
+
+#post3-image {
+  background-image: url("../Images/posts/post3/main.jpg");
 }
 
 .post-article-image-caption {
