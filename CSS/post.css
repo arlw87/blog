@@ -31,10 +31,17 @@
 
 .post-article-image-caption {
   text-align: center;
+  margin: 10px 0;
 }
 
 .post-article-text {
   margin: 20px 0 0 0;
+}
+
+.post-quote {
+  text-align: left;
+  color: #333;
+  text-shadow: 0 2px #eff0ef;
 }
 
 /*Author Info Section*/

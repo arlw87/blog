@@ -46,7 +46,7 @@
   flex-direction: column;
   text-align: left;
   margin: 5px;
-  color: rgb(117, 109, 109);
+  color: #333;
 }
 
 .subscribe-email-container {
@@ -54,7 +54,7 @@
   flex-direction: column;
   margin: 5px;
   text-align: left;
-  color: rgb(117, 109, 109);
+  color: #333;
 }
 
 .subscribe-consent-container {
@@ -62,7 +62,7 @@
   justify-content: left;
   margin: 5px;
   align-items: center;
-  color: rgb(117, 109, 109);
+  color: #333;
 }
 
 .subscribe-submit-container {
