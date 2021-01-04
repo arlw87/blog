@@ -109,13 +109,13 @@
 @media (min-width: 992px) {
   .post-grid-container {
     display: grid;
-    grid-template-columns: 1fr 680px minmax(auto, 300px) 1fr;
+    grid-template-columns: 1fr 680px 1fr;
     grid-template-rows: repeat(4, auto);
     grid-template-areas:
-      "hd hd hd hd"
-      ". info info ."
-      ". social social ."
-      ". art art .";
+      "hd hd hd"
+      ". info  ."
+      ". social ."
+      ". art .";
     row-gap: 20px;
     margin: 0 auto;
   }

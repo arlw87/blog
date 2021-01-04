@@ -51,16 +51,15 @@ body {
 
 .main-text {
   font-size: 1.1em;
+  line-height: 1.5em;
 }
 
-/* @media (max-device-width: 991px) and (min-device-width: 768px) {
-  .display-4 {
-    font-size: 2em;
-    font-weight: 500;
-    letter-spacing: 0px;
-    margin: 2px;
+@media (max-device-width: 991px) and (min-device-width: 768px) {
+  .main-text {
+    font-size: 1.3em;
+    line-height: 1.5em;
   }
-} */
+}
 
 @media (min-width: 992px) {
   .display-1 {
@@ -70,13 +69,6 @@ body {
     margin: 0;
   }
 
-  /* .display-2 {
-    font-size: 3em;
-    font-weight: 500;
-    letter-spacing: 0px;
-    margin: 0;
-  } */
-
   .display-3 {
     font-size: 1.7em;
     font-weight: 500;
@@ -84,19 +76,10 @@ body {
     margin: 2px;
   }
 
-  /* .display-4 {
-    font-size: 1.5em;
-    font-weight: 500;
-    letter-spacing: 0px;
-    margin: 0;
-  } */
-
-  /* .display-5 {
-    font-size: 0.9em;
-    font-weight: 500;
-    letter-spacing: 0px;
-    margin: 0;
-  } */
+  .main-text {
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
 }
 
 /* very small screen devices */
