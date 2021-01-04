@@ -192,12 +192,13 @@
 @media (min-width: 992px) {
   .recent-blogs {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 400px;
     padding: 0 10px 10px 10px;
     grid-gap: 30px;
-    margin: 20px 0;
+    margin: 20px auto;
     justify-content: center;
+    max-width: 950px;
   }
 
   .card-title-container {
