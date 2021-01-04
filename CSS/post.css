@@ -5,8 +5,8 @@
   grid-template-areas:
     "hd hd hd"
     "info info info"
-    "social social social"
-    "art art art";
+    "art art art"
+    "social social social";
   row-gap: 20px;
   margin: 0 24px;
 }
@@ -14,10 +14,6 @@
 .post-header {
   grid-area: hd;
   text-align: center;
-}
-
-.post-social-media {
-  grid-area: social;
 }
 
 .post-article {
@@ -37,7 +33,7 @@
 }
 
 .post-article-text {
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 
 /*Author Info Section*/
@@ -73,4 +69,16 @@
   grid-area: bio;
   margin: 3px;
   color: lightslategray;
+}
+
+/*Social Media Section */
+.post-social-media {
+  grid-area: social;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: auto;
 }
